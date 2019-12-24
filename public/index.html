@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>BOOK</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but book doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script type="text/javascript" src="./js/uni.webview.1.5.2.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('UniAppJSBridgeReady', function() {
+        document.querySelector('#gobackAction').addEventListener('click', function(evt) {
+          uni.navigateBack({
+            delta:1
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
